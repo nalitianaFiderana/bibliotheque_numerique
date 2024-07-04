@@ -1,0 +1,46 @@
+.note{
+	position:fixed;
+	width: 20%;
+	top: 0;
+	left: 0;
+	padding-top: 30px;
+}
+.note h2{
+	font-size: 15px;
+	font-weight: 100;
+	padding-left: 8px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #000;
+	margin-inline:5px 10px;
+}
+.lecture{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 80%;
+}
+.lecture .topNav{
+	background-color: rgba(106, 210, 228, 0.452);
+	height: 30px;
+}
+.backBtn{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 5px;
+	margin-left: 10px;
+}
+.control{
+	position: absolute;
+	margin-right: 10px;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content:center;
+	align-items: center;
+}
+.control *{
+	padding: 5px;
+	margin-inline:5px;
+}

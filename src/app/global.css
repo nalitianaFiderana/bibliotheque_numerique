@@ -1,0 +1,188 @@
+:root{
+	--bleuPastel : #B2CCFF;
+	--vertPastel : #C2FFC2;
+	--rosePastel : #FFB2D9;
+	--jaunePastel : #FFFFB2;
+	--background: #ede7ee;
+}
+*{
+	margin: 0;
+	padding:0;
+	font-size: 16px;
+}
+
+html,body{
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+body{
+	color:rgb(0,0,0);
+	background-color: var(--background);
+}
+
+.MainLayout .barNav{
+	display: none;
+	width: 100vw;
+	background-color: var(--bleuPastel);
+	height: 60px;
+	box-shadow: 1px 5px 5px rgba(0,0,0,0.2);
+}
+.barNav > .right > h2{
+	font-size: 20px;
+	padding: 8px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: var(--vertPastel);
+	color: var(--bleuPastel);
+}
+h1.title{
+	font-size: 23px; /*25*/
+	padding-left: 12px;
+	padding-top: 15px; 
+	color: var(--jaunePastel);
+	text-shadow: 2px 2px 2px var(--rosePastel);
+}
+.menu{
+  margin-right: 30px;
+  margin-left: 10px;
+  width: 30px; /*30*/
+  height: 20px; /*20*/
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  border:1px solid var(--vertPastel);
+  border-radius: 5px;
+}
+.barNav > .left{
+	float: left;
+}
+.barNav > .right{
+	float: right;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	height: 65px;
+}
+.menu .bar:nth-child(1){
+  width: 30%;
+}
+.menu .bar:nth-child(2){
+  width: 60%;
+}
+.menu .bar:nth-child(3){
+  width: 100%;
+}
+.bar{
+  height: 4px;
+  background-color: var(--vertPastel);
+  transition-duration: 0.4s;
+}
+
+.quit .bar:nth-child(1){
+  width: 100%;
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.quit .bar:nth-child(2){
+  opacity: 0;
+}
+.quit .bar:nth-child(3){
+  width: 100%;
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.container{
+	padding: 10px 8px 5px 10px;
+	position: relative;
+	display: flex;
+	flex-flow: row nowrap;
+}
+.listMenu{
+	height: 100vh;
+	flex-flow: column nowrap;
+	background: linear-gradient(
+      to bottom,
+      #709aee,
+      var(--bleuPastel)
+    );
+}
+.listMenu .title{
+	padding: 5px;
+	margin-inline:12px;
+	border-bottom: 1px solid var(--bleuPastel);
+	margin-top: 25px;
+	margin-bottom: 5px;
+}
+.listMenu .elet{
+	cursor: pointer;
+}
+.listMenu .elet:hover{
+	background-color: var(--bleuPastel);
+}
+.listMenu *{
+	text-align: center;
+	display: inline;
+	margin:5px 0px;
+	padding: 10px;
+	color: white;
+	font-weight: 300;
+}
+.listMenu * > .img{
+	margin-right: 30px;
+	padding: 5px;
+	width: 40px;
+	height: 40px;
+}
+.GridCard{
+	position: relative;
+	margin: 8px;
+	padding: 22px 8px;
+	background-color:whitesmoke;
+	border-radius: 5px;
+	box-shadow: 1px 2px 2px rgba(254,254,254,0.3); 
+}
+.GridCard span{
+	width: 60%;
+	height: 75%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 0% 0% 100% 0%;
+	background-color: #3c89d67c;
+}
+.modeLecture{
+	position: relative;
+}
+
+@media (max-width: 880px){
+	.MainLayout .barNav{
+		display: block;
+	}
+	.MainLayout .listMenu{
+		display: none;
+	}
+	.MainLayout{
+		display: flex;
+		flex-flow: column nowrap;
+	}
+}
+@media (min-width: 881px){
+	.MainLayout .barNav{
+		display: none;
+	}
+	.MainLayout .listMenu{
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 22%;
+		display: flex;
+	}
+	.container,
+	.modeLecture{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width:78%;
+	}
+}

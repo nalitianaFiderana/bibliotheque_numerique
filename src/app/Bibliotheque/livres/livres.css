@@ -1,0 +1,80 @@
+:root{
+	--bleuPastel : #B2CCFF;
+	--vertPastel : #C2FFC2;
+	--rosePastel : #FFB2D9;
+	--jaunePastel : #FFFFB2;
+	--background: #ede7ee;
+	--ecritureBleu : #709aee;
+}
+
+.container > .left{
+	width: 30%;
+}
+.container > .right{
+	width: 70%;
+	background-color: rgba(245,245,245,0.5);
+	border-radius: 8px;
+}
+.container > .left > h3{
+	color: var(--ecritureBleu);
+	padding: 5px 0px 5px 5px;
+	margin-right: 8px;
+	margin-bottom: 5px;
+	border-bottom: 2px solid var(--bleuPastel);
+}
+.container > .left > .list > .card{
+	height: 70px;
+	margin: 4px;
+	margin-top: 12px;
+	margin-right: 10px;
+	padding: 4px;
+	border-bottom: 1px solid #b6b4b4;
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.card:hover{
+	background-color: var(--vertPastel);
+	border-radius: 5px;
+}
+.card img{
+	width:30%;
+	height: 60px;
+	border-radius: 8px;
+}
+.card > .minInfo *{
+	padding: 1px 1%;
+	width: 99%;
+	height: 30px;
+	overflow: hidden;
+}
+.card > .minInfo h3{
+	color: #333333;
+	font-size: 14px;
+}
+.card > .minInfo p{
+	color: #b6b4b4;
+	font-size: 12px;
+}
+.barSearch{
+	width: 100%;
+	padding: 8px;
+}
+.search{
+    color: white;
+    background-color: #95caffbd;
+    padding-block:10px ;
+    padding-left: 10px;
+    padding-right: 100px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid #95caff;
+}
+.barSearch span{
+	font-size: 12px;
+	margin-left: 10px;
+	color: #000;
+}

@@ -1,0 +1,73 @@
+:root{
+	--bleuPastel : #B2CCFF;
+	--vertPastel : #C2FFC2;
+	--rosePastel : #FFB2D9;
+	--jaunePastel : #FFFFB2;
+	--background: #ede7ee;
+	--ecritureBleu : #709aee;
+}
+.AcContain{
+	width: 100%;
+}
+.barSearch{
+	width: 100%;
+	padding: 5px;
+}
+.search{
+    color: white;
+    background-color: #95caffbd;
+    padding-block:5px 10px;
+    padding-left: 10px;
+    padding-right:100px; 
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid #95caff;
+}
+.barSearch button{
+	background-color: var(--ecritureBleu);
+	color: white;
+	margin-left: 10px;
+	font-weight: bold;
+	padding: 8px 12px;
+	border-radius: 10px;
+	border:1px solid white;
+}
+.barSearch span{
+	font-size: 12px;
+	margin-left: 10px;
+	color: #000;
+	margin-top: 5px;
+}
+.barSearch select{
+	margin-top: 5px;
+	margin-left: 5px;
+	font-size: 12px;
+	border: 0;
+	border-bottom: 1px solid #333333;
+	padding-bottom: 2px;
+}
+.barSearch select option{
+	font-weight: 100;
+	font-size: 12px;
+}
+.AcContain h5{
+	margin-left: 15px;
+	margin-top: 10px;
+	font-size: 20px; /*25*/
+	color: var(--jaunePastel);
+	padding-bottom: 5px;
+	text-shadow: 2px 2px 2px var(--bleuPastel);
+	border-bottom: 2px solid var(--bleuPastel);
+}
+
+.listGrid{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.GridCard{
+	width: fit-content;
+
+}
